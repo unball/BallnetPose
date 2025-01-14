@@ -1,0 +1,19 @@
+flip_idx:
+- 0
+- 1
+
+kpt_shape:
+- 2
+- 3
+
+names:
+- robot0
+- robot1
+- robot2
+- ball
+
+nc: 4
+
+test: ../test/images
+train: ../train/images
+val: ../valid/images
