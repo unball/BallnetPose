@@ -1,1 +1,1 @@
-model.pt filter=lfs diff=lfs merge=lfs -text
+ballnet-pose.pt filter=lfs diff=lfs merge=lfs -text
