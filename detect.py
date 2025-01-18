@@ -1,6 +1,5 @@
 from ultralytics import YOLO
 import math
-import cv2 as cv
 from collections import namedtuple
 import os
 import torch
