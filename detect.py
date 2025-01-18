@@ -7,7 +7,7 @@ import torch
 
 Detection = namedtuple('Detection', ['robots', 'ball'])
 Robot = namedtuple('Robot', ['id','center_x', 'center_y','orientation'])
-Ball = namedtuple('Ball', ['center_x', 'center_y'])
+Ball = namedtuple('Ball', ['id','center_x', 'center_y'])
 
 class BallnetPose:
     def __init__(self):
@@ -52,7 +52,7 @@ class BallnetPose:
                 keypoints = keypoints.tolist()
                 
                 if cls == 3:
-                    ball = Ball(center[0], center[1])
+                    ball = Ball(cls, center[0], center[1])
                 else:                    
                     front = keypoints[:2]
                     back = keypoints[2:]
